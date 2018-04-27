@@ -81,6 +81,9 @@
 		background:black;
 
 	}
+.cuadradotres:hover{
+	transform: scale(5);
+}	
 }
 .cuadradotres{
 	display:inline-block;
@@ -88,4 +91,5 @@
 	width:150px;
 	background:blue;
 	transition:1s;
+	animation-name: prueba;
 }

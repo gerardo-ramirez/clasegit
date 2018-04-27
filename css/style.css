@@ -1,0 +1,91 @@
+.ms{
+	display:flex;/* siempre al padrer me va a permitir  poner un elemento al ladi
+	del otro*/
+	align-items: center;
+
+}
+.ms ul{
+	display: flex;
+	list-style: none;/* borra las viñetas*/
+	flex-wrap: wrap;
+	max-width: 100px;
+	margin-right: 10px;
+
+}
+.ms ul li{
+	width:50px;
+	height: 50px;
+	background: red;
+}
+
+.ms ul li:first-child{
+	background: red;
+
+}
+@keyframes girar{
+	0%{
+		background: green;
+
+	}
+	25%{
+		background: red;
+		border-radius: 50%;
+		transform:rotate(90deg);
+		transform: translate(300px,-100px);
+	}
+	50%{
+		background: pink;
+		transform: scale(4);
+	}
+	75%{
+		background: cyan;
+		transform: scale(0.2) translate(-25px, 100px);
+	}
+	100%{
+		background: green;
+	}
+}
+.cuadrado{
+	text-align: center;
+	display:inline-block;
+	height: 150px;
+	width:150px;
+	background:green;
+	transition:4s;
+	transition-timing-function: ;
+	animation-name: girar;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;;
+
+
+}
+.cuadrado2:hover{
+	transform: scale(1.2) rotate(40deg);/* rotate tiene  que ver con el giro
+	del elemento. scaled es el cambio del tamaño cuando paso sobre el elemento.(debido al hover)*/
+}
+.cuadrado2{
+	text-align: center;
+	display:inline-block;
+	height: 150px;
+	width:150px;
+	background:cyan;
+	transition:1s;
+
+}
+@keyframes prueba{
+	form { 
+		background:blue
+	};
+
+	to {
+		background:black;
+
+	}
+}
+.cuadradotres{
+	display:inline-block;
+	height: 150px;
+	width:150px;
+	background:blue;
+	transition:1s;
+}
